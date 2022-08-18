@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- En-tête -->
+    <title>Union des Entrepreneurs</title>
+    <link rel="shortcut icon" href="src/logo/logo_couleur.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <!-- Icône -->
+    <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+	    background-color: #F5F5F5;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #f5b15b;
+    }
+</style>
+<body>    
+    <!-- NAVBAR -->
+     <nav>           
+        <a href="#home" class="lien-logo">
+            <img src="src/logo/UESA_RVB_150dpi.png" class="logo" id="banner">
+        </a>
+        <a class="toggle-button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="nav-right">
+            <ul>
+                <li class="nav-item"><a href="#actu">Actus</a></li>
+                <li class="nav-item dropdown"><a class="dropbtn">à propos <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#rejoindre">Nous rejoindre</a>
+                        <a href="#adherents">Nos adhérents</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#evenements">événements</a></li>
+                <li class="nav-item"><a href="#blog">Blog</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ACCUEIL -->
+    <section id="home">    
+        <section id="accueil">
+            <div class="img-accueil">
+                <scroll>
+                    <div class="scroll-down">
+                        <i class="fas fa-angle-double-down" id="down"></i>
+                    </div> 
+                </scroll>
+            </div>
+        </section>
+        <!-- ACTUALITES -->
+        <section  id="actu">
+            <element> 
+                <div class="petal-before"></div>
+                <div class="overout">
+                    <img class="text-logo" src="src/logo/text-logo.png">
+                    <div class="petal">
+                        <img src="src/logo/petal.png" class="petal-before">
+                        <img src="src/logo/petal.png" class="petal-after">
+                    </div>
+                </div>   
+                <div class="actu-title">
+                    <h1 class="xxl xxl-actu" id="title0">Actualités</h1>
+                </div>             
+            </element>     
+         
+            <div class="actu">
+                <div class="actu-item" id="actu1" onclick="window.open('https://www.saint-ave.bzh/medias/2021/07/STA-Juillet-2021-web.pdf', '_blank');">
+                    <div class="details">
+                        <ul>
+                            <li><h4>Bulletin Municipal</h4></li>
+                            <li><h4 class="date">17 Juillet</h4></li>
+                        </ul>
+                    </div> 
+                </div> 
+                <div class="actu-item" id="actu2" onclick="window.open('https://www.letelegramme.fr/morbihan/saint-ave/a-saint-ave-les-entrepreneurs-veulent-se-montrer-04-07-2021-12782749.php', '_blank');">
+                    <div class="details">
+                        <ul>
+                            <li><h4>Article du Télégramme</h4></li>
+                            <li><h4 class="date">4 Juillet</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="actu-item" id="actu3" onclick="window.open('https://www.ouest-france.fr/bretagne/saint-ave-56890/lunion-des-entrepreneurs-change-de-vitrine-790b8074-a8ea-4d6b-ae1b-94bb492ee598', '_blank');">
+                    <div class="details">
+                        <ul>
+                            <li><h4>Article du Ouest France</h4></li>
+                            <li><h4 class="date">3 Juillet</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>   
+        </section>
+        <!-- RESEAUX SOCIAUX -->
+        <div class="social">
+            <button class="main-social" id="toggle-button">
+                <a title="Partager"><i class="fas fa-share" id="share"></i></a>
+            </button>
+            <div class="other-social">
+                <a target="_blank"  href="https://www.facebook.com/uniondesentrepreneursdesaintave/" title="Facebook"><i class="fab fa-facebook" id="facebook"></i></a>
+                <a target="_blank" href="https://www.facebook.com/groups/onatoutcheznous" title="Page Facebook"><i class="fas fa-pager" id="facebook"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCZw8w4wo0bARQrusd1gj2tg" title="Youtube"><i class="fab fa-youtube" id="youtube"></i></a>
+                <a target="_blank" href="https://www.instagram.com/uniondesentrepreneurs/" title="Instagram"><i class="fab fa-instagram" id="instagram"></i></a>
+            </div>
+        </div>
+        <!-- NOUS REJOINDRE -->
+        <section class="rejoindre rubrique" id="rejoindre">        
+            <div class="rejoindre-title">
+                <h1 class="xxl xxl-rejoindre" id="title1">Nous rejoindre</h1>
+                <div class="main-text" id="div1">
+                    <h2 class="second-title">Nos objectifs</h2>
+                    <ul>
+                        <li class="liste"><i class="fas fa-hand-holding-usd"></i> Soutenir la vie économique de Saint Avé</li>
+                        <li class="liste"><i class="fas fa-rocket"></i> Dynamiser la vie de nos commerces</li>
+                        <li class="liste"><i class="fas fa-users"></i> Regrouper le maximum d’adhérents pour que notre voix compte</li>
+                        <li class="liste"><i class="fas fa-calendar-alt"></i> Organiser des événements pour consolider le réseau d’entrepreneurs mais également afin de rencontrer nos clients</li>
+                        <li class="liste"><i class="fas fa-handshake"></i> Participer aux réunions publiques et représenter nos partenaires</li>
+                    </ul>
+                </div>          
+                <div class="main-text" id="div2">
+                    <h2 class="second-title">Adhèrer c'est..</h2>
+                    <ul>
+                        <li class="liste"><i class="fas fa-eye"></i> Augmenter votre visibilité et votre offre commerciale</li>
+                        <li class="liste"><i class="fas fa-chart-line"></i> Accroître votre chiffre d’affaires</li>
+                        <li class="liste"><i class="fas fa-expand"></i> Participer à des groupes de travail pour animer et développer la zone de chalandise</li>
+                        <li class="liste"><i class="fas fa-info-circle"></i> Être davantage informé des opérations mises en place dans l’agglomération</li>
+                    </ul>
+                </div>    
+            </div>            
+            <div class="logo-page">
+                <img src="src/logo/logo-page.png" class="img">
+            </div>      
+            <div class="toggle-container">
+                <button class="glass-button" id="toggle"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <!-- NOS ADHERENTS -->
+        <section class="rubrique adherents" id="adherents">  
+            <h1 class="xxl xxl-adherents" id="title2">Nos adhérents</h1>
+            <div class="orga">
+                <div class="card-container">
+                    <div class="card" style="--delay:-1;" onclick="window.open('https://www.impuls-ions.com/royet-laetitia-assistante-administrative-et-commerciale-pour-les-professionnels-et-les-particuliers/', '_blank');">
+                        <div class="card-content">
+                            <img src="src/photo/royet.png">
+                            <div class="detail">
+                                <div class="name">Royet Secrétariat</div>
+                                <p>Assistante administrative et commerciale</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--delay:0;" onclick="window.open('https://thermipro56.business.site/', '_blank');">
+                        <div class="card-content">
+                            <img src="src/photo/thermipro.jpg">
+                            <div class="detail">
+                                <div class="name">Thermipro</div>
+                                <p>Sanitaire-Chauffage-Plomberie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--delay:1;" onclick="window.open('https://www.rdcreativ.fr/', '_blank');">
+                        <div class="card-content">
+                            <img src="src/photo/rdcreativ.png">
+                            <div class="detail">
+                                <div class="name">RD Creativ'</div>
+                                <p>Agence de communication visuelle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--delay:2;" onclick="window.open('https://luniversdo.fr/', '_blank');">
+                        <div class="card-content">
+                            <img src="src/photo/universdo.jpg">
+                            <div class="detail">
+                                <div class="name">L'Univers d'Ô</div>
+                                <p>Centre aquatique</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--delay:2;" onclick="window.open('https://www.ladymerveilles.com/', '_blank');">
+                        <div class="card-content">
+                            <img src="src/photo/ladymerveilles.jpg">
+                            <div class="detail">
+                                <div class="name">Laty Merveilles</div>
+                                <p>Chocolatier confiseur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EVENEMENTS -->
+        <section class="evenements rubrique" id="evenements">
+            <div class="evenements-title">
+                <h1 class="xxl xxl-evenements" id="title3">Evénements</h1>
+            </div>
+            <div class="timeline-items">
+                <div class="item-timeline">
+                    <div class="date-evenement">3 juillet 2021</div>
+                    <div class="evenement-content" id="renouvellement">
+                        <h3>L’Union change d'image</h3>
+                        <p>Présentation officiel de la nouvelle image aux adhérents. Remodélisation du logo et du nom, nouvelle plaquette et nouvelle charte, tout cela a été présenté chez Digital Impression</p>
+                    </div>
+                    <div class="point-evenement"></div>
+                </div>
+                 
+                <div class="item-timeline">
+                    <div class="date-evenement">3 déc - 24 déc 2021</div>
+                    <div class="evenement-content" id="list-evenement">
+                        <h3>Tombola de Noël 2021</h3>
+                        <p>La tombola serait organisée de la façon suivante pour l’attribution des lots :</p>
+                            <ul>
+                            <li>1er prix : Vol en hélicoptère autour du golfe du Morbihan pour 2 personnes</li>
+                            
+                            <li>2ème prix : Baptême en simulateur de chute libre pour 2 personnes + un bon cadeau de 110 € à utiliser chez l’un de nos restaurateurs adhérents.</li>
+                            
+                            <li>3ème prix : Super panier garni avec un cadeau/remise de la part de chaque adhérent (76 à ce jour).</li>
+                            </ul>
+                    </div>
+                    <div class="point-evenement"></div>
+                </div>
+                <div class="item-timeline">
+                    <div class="date-evenement">3 déc - 24 déc 2021</div>
+                    <div class="evenement-content" id="list-evenement">
+                        <h3>Concours de maisons décorées</h3>
+                        <p>Comme chaque année, l’UESA a organisé du 3 au 24 décembre un concours de maisons décorées sur Saint-Avé.
+                            Voici les gagnants 2020 :
+                        </p>
+                            <ul>
+                            <li>1er prix : 100 € en bons d’achat de 25 € à utiliser chez nos adhérents : Patrice LEGAL 17 rue George Sand </li>
+                            
+                            <li>2ème prix : 50 € en bons d’achat de 25 € à utiliser chez nos adhérents : Lucie LAVALETTE MOAL 9b rue de Beausoleil</li>
+                            
+                            <li>3ème prix : un bouquet de fleurs de chez Gloriosa Fleurs : Christian MADEC 35 rue du champ des oiseaux</li>
+                            </ul>
+                    </div>
+                    <div class="point-evenement"></div>
+                </div>
+                <div class="item-timeline">
+                    <div class="date-evenement">15 mai 2022</div>
+                        <div class="evenement-content" id="list-evenement-clickable">
+                            <h3>Course de caisses à savon 2022</h3>
+                            <p>Les inscriptions restent ouvertes ! 
+
+                                La course est à partir de 10h00 et jusqu’à 19h.
+                                
+                                Départ place de la Mairie, arrivée place Notre-Dame du Loc.</p>
+                                <ul>
+                                    <li><a target="_blank" href="http://ucaave.com/wp-content/uploads/2020/05/R%C3%A8glement-caisses-%C3%A0-savon.pdf">Règlement de la course</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    <div class="point-evenement"></div>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG -->
+        <section class="blog rubrique" id="blog">
+            <h1 class="xxl xxl-blog" id="title4">Blog</h1>
+            <div class="blog-grid">
+                <div class="actu-item" id="blog1">
+                    <video controls>
+                        <source src="src/video/resultat-concours-royet.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec Royet Secrétariat</h4></li>
+                            <li><h4 class="date">25 juin</h4></li>
+                        </ul>
+                    </div> 
+                </div> 
+                <div class="actu-item" id="blog2">
+                    <video controls>
+                        <source src="src/video/resultat-concours-thermipro.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec Thermipro</h4></li>
+                            <li><h4 class="date">4 juin</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="actu-item" id="blog3">
+                    <video controls>
+                        <source src="src/video/resultat-concours-rdcreativ.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec RD Créativ'</h4></li>
+                            <li><h4 class="date">28 mai</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="actu-item" id="blog4">
+                    <video controls>
+                        <source src="src/video/resultat-table-de-florine.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec La table de Florine</h4></li>
+                            <li><h4 class="date">21 mai</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="actu-item" id="blog5">
+                    <video controls>
+                        <source src="src/video/resultat-Colibreizh.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec Colibreizh</h4></li>
+                            <li><h4 class="date">16 mai</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="actu-item" id="blog6">
+                    <video controls>
+                        <source src="src/video/resultat-concours-Lady-Merveilles.mp4" type="video/mp4">
+                    </video>
+                    <div class="details">
+                        <ul>
+                            <li><h4>Jeu concours avec Lady Merveilles</h4></li>
+                            <li><h4 class="date">2 mai</h4></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="contact rubrique" id="contact">
+            <div class="contact-container">
+                <div class="img-form">
+                    <img src="src/logo/logo-contact.png">
+                </div>
+                <div class="form">
+                    <form>
+                        <h2>Contactez-nous</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Nom complet</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="" required="required">
+                            <span>Adresse mail</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Votre message</span>
+                        </div> 
+                        <div class="inputBox">
+                            <input type="submit" value="Envoyer" name="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+<!-- FOOTER -->
+<footer>
+    <div class="foot-1">
+        <div class="about">
+            <div class="title">A propos de nous</div>
+            <p>
+                Bienvenue sur le site de l’union des entrepreneurs de Saint-Avé.
+                Depuis de nombreuses années, la commune de Saint Avé soutient son union commerciale, 
+                relais indispensable entre les acteurs économiques de la commune et les pouvoirs publics.
+            </p>
+        </div>
+        <div>
+            <div class="contact-footer">
+                <div class="title">Contact</div>
+            </div>
+            <ul>
+                <li id="clickable"><i class="fas fa-map-marker-alt"></i><a target="_blank" href="https://www.google.com/maps/place/Union+des+entrepreneurs+de+Saint-Av%C3%A9/@47.7055356,-2.7340982,13.52z/data=!4m5!3m4!1s0x0:0x333894e979d18409!8m2!3d47.7007216!4d-2.7432064">Adresse</a></li>
+                <li id="clickable"><i class="far fa-envelope"></i><a href="mailto:uesaintave@gmail.com">uesaintave@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="autre">
+            <div class="title">RGPD</div>
+            <ul>
+                <li id="clickable"><i class="fas fa-balance-scale"></i><a target="_blank" href="https://tangy-smile-b2c.notion.site/RGPD-b4ecebf022c54fd286bd12434245b747">Mentions Légales</a></li>
+            </ul>
+          </div>
+    </div>
+
+    <div class="foot-2">
+        <p>Écouter, fédérer, développer l’activité des entrepreneurs de Saint-Avé. Rejoignez nous!</p>
+    </div>
+</footer>
+</html>
